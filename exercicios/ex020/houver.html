@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de houver</title>
+    <style>
+        /* aqui colocamos um hover pra fazer aparecer um texto escondido, serve pra fazer menus..
+
+        usando o width eu consigo diminuir a backgraud-color..
+
+        uando '> ' diz que a div e filho dela entao ela so vai fazer oque seu pai quiser exp: div > p {} ..*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{
+            display: none;
+            color: blue;
+        }
+        div:hover > p{
+            display: block;
+            background-color: red;
+            color: white;
+            width: 200px;
+        }
+        div:hover{
+            color: red;
+        }
+        a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Houver</h1>
+    <p>Passe um mouse sobre o texto </p>
+    <div>
+        Passe o mouse aqui
+        <p><a href="pseudoclass.html" target="_blank">TEXTO ESCONDIDO. . .</a></p>
+    </div>
+    <P>Fim do Exemplo</P>
+</body>
+</html>

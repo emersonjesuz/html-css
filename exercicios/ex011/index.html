@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagam dinamica</h1>
+    <p>tente abrir o site em varios dispositivos diferentes ou diminuar e aumente o tamanho da do navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagens flexiveis">
+    </picture>
+    <h1>reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5 <header>Tarcisio do Acordeon-AGONIA</header> <audio src="midia/AGONIA - _Tarcisio do Acordeon (Pra Tocar No Paredão) _ Áudio Oficial(MP3_70K).mp3"
+         controls autoplay></audio></p>
+    <audio preload="metadata" autoplay controls > <!--ainda pode usar loop para fazer repetit -->
+        <source src="midia/AGONIA - _Tarcisio do Acordeon (Pra Tocar No Paredão) _ Áudio Oficial(MP3_70K).mp3" type="audio/mpeg">
+        <source src="midia/AGONIA - _Tarcisio do Acordeon (Pra Tocar No Paredão) _ Áudio Oficial(MP3_70K).ogg" type="audio/ogg">
+        <source src="midia/AGONIA - _Tarcisio do Acordeon (Pra Tocar No Paredão) _ Áudio Oficial(MP3_70K).wav" type="audio/wav">
+        <p>Infelismente o navegador não consegue reproduzir o audio. <a href="midia/AGONIA - _Tarcisio do Acordeon (Pra Tocar No Paredão) _ Áudio Oficial(MP3_70K).mp3">Clique para baixar o arquivo MP3.</a></p>
+        <!--note que so vai colocar pra baixar caso nem uma das opções a cima de certo no navegador do cliente -->
+
+    </audio> 
+
+</body>
+</html>

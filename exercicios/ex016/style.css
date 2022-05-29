@@ -1,0 +1,27 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to bottom, #edd5c6, #d39e7f);
+    height: 100%;
+}
+main{
+    box-shadow: 10px 10px 10px rgba(126, 126, 126, 0.609);
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto; /*vai colocar pra ficar no meio */
+}
+h1{
+    box-shadow: 1px 2px 3px #945805bb;
+    color: #F39209;
+   /*Era pra ter usado o text-shadow mas eu usei o box ele fez uma caixa involta do texto.. se eu utilizar o text ele iria sombrear o texto*/
+}
+h2{
+    color: #125189;
+}
+p{
+    text-align: justify;
+}
