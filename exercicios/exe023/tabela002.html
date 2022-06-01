@@ -22,10 +22,17 @@
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
         thead, tfoot{
             background-color: rgb(39, 38, 38);
             color: white;
+        }
+        thead > tr > th{ /*assim que faz algo colar na tela */
+            position: sticky;
+            top: -1px;
+            background-color: rgb(29, 27, 27);
+
         }
         tbody > tr:nth-child(2n){
             background-color: lightgray;
