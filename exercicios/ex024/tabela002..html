@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 500px;
+        }
+        caption{
+            font-weight: bold;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome{
+            background-color: chartreuse;
+        }
+        col.csexo{
+            background-color: aqua;
+        }
+        col.cidade{
+            background-color: rgba(255, 0, 0, 0.609);
+        }
+        col.cprof{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>pedro</td>
+            <td>M</td>
+            <td>33</td>
+            <td>agronomo</td>
+        </tr>
+        <tr>
+            <td>maria</td>
+            <td>F</td>
+            <td>12</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>josé</td>
+            <td>M</td>
+            <td>70</td>
+            <td>Aposentado</td>
+        </tr>
+        <tr>
+            <td>cicera</td>
+            <td>F</td>
+            <td>40</td>
+            <td>Proferssora</td>
+        </tr>
+        <tr>
+            <td>matheus</td>
+            <td> M</td>
+            <td>43</td>
+            <td>vendedor</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
