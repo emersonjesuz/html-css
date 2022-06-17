@@ -11,11 +11,11 @@
     --fonte-dakota:'Dakota',cursive;
 
 
-    --cor0:#BCF5F5;
+    --cor0:#044747;
     --cor1:#82A8A8 ;
     --cor2:#1DA8A7 ;
-    --cor3:#2D7575 ;
-    --cor4:#475C5C ;
+    --cor3:#2d757594 ;
+    --cor4:#0e5e5e ;
 }
 *{
     margin: 0px;
@@ -25,9 +25,9 @@ body{
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
 }
-p{
+ div >p{
     padding: 20px 40px;
-    font-size:0.8em ;
+    font-size:25px ;
     text-align: justify;
     text-indent: 20px;
     margin:5px auto;
@@ -38,17 +38,19 @@ header{
 
 }
 header > h1{
+    padding: 10px;
     font-family: var(--fonte-titulo);
     color: var(--cor0);
     font-size: 3em;
     font-weight: bold;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.584);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.302);
 }
 header > p{
+    padding: 20px 40px;
     font-family: var(--fonte-titulo);
     text-align: center;
     margin-bottom: 0px;
-    color: #1da8a895;
+    color: #bbcece95;
     font-size: 1.5em;
     margin-top: -22px;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.584);
@@ -63,14 +65,15 @@ nav > a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.467);
     padding-left: 5px;
-    transition-duration: 00.5s;
+  
 }
 nav > a:hover{
-    background-color: var(--cor3);
-    padding: 5px;
-    border-radius: 2px 2px 0px 0px;
-    color: var(--cor4);
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.465);
+    background-color: rgba(255, 255, 255, 0.096);
+    padding:  10px;
+    border-radius:5px;
+    color: darkkhaki;
+    box-shadow:0px 0px 8px rgba(0, 0, 0, 0.465);
+    transition-duration: 00.5s;
 }
 
 main{
@@ -82,33 +85,23 @@ main{
     
 
 }
-main img.imagem1{
+img.imagem1{
     display: block;
-    min-width: 322px;
-    max-width: 502px;
-    min-height: 500px;
-    max-height: 600px;
+  
     width: 70%;
     margin:0px auto 30px auto;
 }
-main img.imagem2{
+img.imagem2{
     display: block;
-    min-width: 400px;
-    min-width: 322px;
-    max-width: 502px;
-    min-height: 500px;
-    max-height: 700px;
+  
     width: 70%;
     margin:30px auto;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.648);
     border-radius: 10px;
 }
-main img.imagem3{
+img.imagem3{
     display: block;
-    min-width: 322px;
-    max-width: 502px;
-    min-height: 500px;
-    max-height: 700px;
+   
     width: 70%;
     margin: 30px auto;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.648);
@@ -140,15 +133,75 @@ div.video > video{
 }
 footer{
     text-align: center;
-    padding: 10px;
-    background-color: #232b2bee;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #0b0b0bfb;
     color: rgb(165, 164, 164);
 }
-footer > a{
+footer > p > a{
     color: rgb(173, 171, 171);
     text-decoration: none;
 }
-footer >a:hover{
+footer > p >a:hover{
     color: white;
     text-decoration: underline;
+}
+@media (max-width:700px){
+    nav > a{
+        padding-top: 10px;
+    }
+    div > p{
+        font-size: 25px;
+    }
+}
+@media (max-width:500px){
+    header > h1{
+        padding-top: 10px;
+        font-size: 40px;
+    }
+    header > p{
+        font-size: 15px;
+    }
+    nav >a{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 25px;
+        text-shadow: 0px 0px 3px black;
+    }
+    div > p{
+        font-size: 15px;
+    }
+
+    footer > p{
+        font-size: 10px;
+    }
+
+
+}
+
+@media (max-width:320px){
+    header > h1{
+        padding-top: 10px;
+        font-size: 30px;
+    }
+    header > p{
+        font-size: 15px;
+    }
+    nav >a{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 20px;
+        text-shadow: 0px 0px 3px black;
+    }
+    div > p{
+        font-size: 10px;
+    }
+
+    footer > p{
+        font-size: 10px;
+    }
+
+
 }
